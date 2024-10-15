@@ -34,14 +34,14 @@ def fetch_emails():
         else:
             body = msg.get_payload(decode=True).decode()
 
-        # Add the entire email headers for IP extraction
+        # Getting the entire email headers for IP extraction
         headers = msg
 
         email_list.append({
             'subject': subject,
             'sender': sender,
             'body': body,
-            'headers': headers  # Include headers for IP extraction
+            'headers': headers  
         })
 
     imap.logout()
