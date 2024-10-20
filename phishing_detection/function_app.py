@@ -1,3 +1,4 @@
+# phishing_detection/function_app.py
 import logging
 import azure.functions as func
 from phishing_detection.main import analyze_email
